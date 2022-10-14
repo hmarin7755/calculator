@@ -18,4 +18,5 @@ function operate(operator, num1, num2) {
     return operator(num1, num2);
 }
 
+
 //console.log(operate(add, 5, 2))
