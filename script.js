@@ -25,6 +25,7 @@ class Calculator {
   
     appendNumber(number) {
       if (number === '.' && this.currentOperand.includes('.')) return
+      if(this.currentOperand.length < 7)
       this.currentOperand = this.currentOperand.toString() + number.toString()
     }
   
