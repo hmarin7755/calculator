@@ -1,3 +1,4 @@
+
 class Calculator {
     constructor(prevDisplayValue, currentDisplayValue) {
       this.prevDisplayValue = prevDisplayValue
@@ -90,6 +91,7 @@ class Calculator {
         this.prevDisplayValue.innerText = ''
       }
     }
+
   }
   
   
