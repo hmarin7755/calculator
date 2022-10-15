@@ -8,10 +8,10 @@ let operators = document.querySelectorAll(".op-button");
 let clear = document.querySelector(".clear");
 let equal = document.querySelector(".equals-button");
 let decimal = document.querySelector(".dot");
-//TODO fix functionality for these buttons
+
 let negate = document.querySelector(".negate");
 let backspace = document.querySelector(".backspace");
-//TODO fix negate after pressing equals, if u press negate iagain it brings up last operand used
+
 negate.addEventListener("click", () => {
   negateNum();
 });
@@ -22,7 +22,7 @@ function negateNum() {
   currentDisplay.textContent = currentVal.toString();
   
 }
-//TODO backspace doesnt work after negating number
+
 backspace.addEventListener("click", () => {
     currentVal = currentVal.slice(0, currentVal.length - 1);
     currentDisplay.textContent = currentVal;
