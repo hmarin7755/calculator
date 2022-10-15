@@ -55,7 +55,7 @@ class Calculator {
           computation = prev * current
           break
         case '÷':
-          computation = prev / current
+          computation = (prev / current).toFixed(10)  
           break
         default:
           return
