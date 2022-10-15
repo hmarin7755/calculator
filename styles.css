@@ -1,122 +1,131 @@
-body{
-    background-color: #205375;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100vw;
-    height: 100vh;
-    flex-direction: column;
+@font-face {
+  font-family: digital;
+  src: url(fonts/Digital7-1e1Z.ttf);
 }
-.calculatorBody{
-    background-color: #181818;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 15px;
-    box-shadow: 5px 5px 7px black
+body {
+  background-color: #205375;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
 }
-.display{
-    background-color: #F2F2F2;
-    width: 95%;
-    height: 130px;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    flex-direction: column;
-    border-radius: 15px;
-    margin-top: 10px;
-    box-shadow: inset 2px 2px 3px black ;
+.calculatorBody {
+  background-color: #181818;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 5px 5px 7px black;
 }
-.curr-display-text{
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 20px;
-    font-size: x-large;
-    /* background-color: #8758FF; */
-  
+.display {
+  background-color: #f2f2f2;
+  width: 95%;
+  height: 130px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-direction: column;
+  border-radius: 15px;
+  margin-top: 10px;
+  box-shadow: inset 2px 2px 3px black;
+  font-family: digital;
 }
- .prev-display-text{
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 20px;
-    font-size: large;
-    /* background-color: bisque; */
-   
- }
-
-.buttonsWrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-   /* border-color: #ba2222; */
-/* border-style: dashed; */
-    border-radius: 20px;
-    margin: 30px 10px 5px;
-   
+.curr-display-text {
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
+  font-size: 50px;
+  /* background-color: #8758FF; */
 }
-.buttonsRow{
-    display: flex;
-
+.prev-display-text {
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
+  font-size: 25px;
+  /* background-color: bisque; */
 }
 
-button{
-    height: 70px;
-    width: 70px;
-    border-radius: 100px;
-    margin: 7px 7px;
-    font-size: x-large;
-
-    border: none;
-    box-shadow: 5px 5px 7px black
+.buttonsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border-color: #ba2222; */
+  /* border-style: dashed; */
+  border-radius: 20px;
+  margin: 30px 10px 5px;
 }
-button:hover{
-    /* background-color: #f2f2f2e3; */
-    cursor: pointer;
-    transform: translateY(-1px);
-    box-shadow: 5px 5px 7px black
+.buttonsRow {
+  display: flex;
+}
 
+button {
+  height: 70px;
+  width: 70px;
+  border-radius: 100px;
+  margin: 7px 7px;
+  font-size: x-large;
+
+  border: none;
+  box-shadow: 5px 5px 7px black;
+}
+button:hover {
+  /* background-color: #f2f2f2e3; */
+  cursor: pointer;
+  transform: translateY(-1px);
+  box-shadow: 5px 5px 7px black;
 }
 
 button:active {
-    transform: translateY(1px);
-    box-shadow: 3px 3px 5px black;
-    transition: all .1s;
+  transform: translateY(1px);
+  box-shadow: 3px 3px 5px black;
+  transition: all 0.1s;
 }
-.op-button:hover{
-    /* background-color: #8758ffdd; */
-    cursor: pointer;
-    box-shadow: 5px 5px 7px black
+.op-button:hover {
+  /* background-color: #8758ffdd; */
+  cursor: pointer;
+  box-shadow: 5px 5px 7px black;
 }
 .op-button:active {
-    transform: translateY(1px);
-    box-shadow: 3px 3px 5px black;
-    transition: all .1s;
+  transform: translateY(1px);
+  box-shadow: 3px 3px 5px black;
+  transition: all 0.1s;
 }
-.equals-button:hover{
-    /* background-color: #5cb9e4dd; */
-    cursor: pointer;
-    box-shadow: 5px 5px 7px black
+.equals-button:hover {
+  /* background-color: #5cb9e4dd; */
+  cursor: pointer;
+  box-shadow: 5px 5px 7px black;
 }
 .equals-button:active {
-    transform: translateY(1px);
-    box-shadow: 3px 3px 5px black;
-    transition: all .1s;
+  transform: translateY(1px);
+  box-shadow: 3px 3px 5px black;
+  transition: all 0.1s;
 }
 
- .span-two{
-    width: 150px;
-  
- }
- .op-button{
-    background-color: #8758FF;
- }
-.equals-button{
-    background-color: #5CB8E4;
+.span-two {
+  width: 150px;
 }
-
+.op-button {
+  background-color: #8758ff;
+}
+.equals-button {
+  background-color: #5cb8e4;
+}
+.copyright {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #f2f2f2;
+}
+img:hover {
+  transform: scale(1.09, 1.09);
+}
